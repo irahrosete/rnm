@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from './Card.module.scss'
+import CardBadge from './CardBadge'
 
 const Card = ({ results }) => {
   let display = ''
 
   if (results) {
     display = results.map((char) => {
-      let { id, image, name, location } = char
+      let { id, image, name, location, status } = char
       return (
         <div
           className='col-lg-4 col-md-6 col-sm-6 col-12 mb-4 position-relative text-dark'
@@ -26,6 +27,7 @@ const Card = ({ results }) => {
               </div>
             </div>
           </div>
+          <CardBadge status={status} />
         </div>
       )
     })
