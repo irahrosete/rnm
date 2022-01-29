@@ -1,15 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from './Card.module.scss'
 import CardBadge from './CardBadge'
 
-const Card = ({ results }) => {
+const Card = ({ page, results }) => {
   let display = ''
 
   if (results) {
     display = results.map((char) => {
       let { id, image, name, location, status } = char
       return (
-        <div
+        <Link
+          style={{ textDecoration: 'none' }}
+          to={`${page}${id}`}
           className='col-lg-4 col-md-6 col-sm-6 col-12 mb-4 position-relative text-dark'
           key={id}
         >
@@ -32,7 +35,7 @@ const Card = ({ results }) => {
             </div>
           </div>
           <CardBadge status={status} />
-        </div>
+        </Link>
       )
     })
   } else {
