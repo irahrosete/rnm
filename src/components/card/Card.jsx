@@ -16,12 +16,16 @@ const Card = ({ results }) => {
           <div
             className={`${styles.card} d-flex flex-column justify-content-center`}
           >
-            <img className={`${styles.img} img-fluid`} src={image} alt='' />
+            <img
+              className={`${styles.img} img-fluid`}
+              src={image}
+              alt='character shot'
+            />
             <div className={`${styles.content}`}>
               <div className={`${styles.truncate} fs-5 fw-bold mb-4`}>
                 {name}
               </div>
-              <div className=''>
+              <div>
                 <div className='fs-6 fw-normal'>Last Location</div>
                 <div className={`${styles.truncate} fs-5`}>{location.name}</div>
               </div>
