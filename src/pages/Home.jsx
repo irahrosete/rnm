@@ -1,15 +1,10 @@
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap'
-
-import './App.css'
-
 import React, { useEffect, useState } from 'react'
-import Card from './components/card/Card'
-import Search from './components/search/Search'
-import Pagination from './components/pagination/Pagination'
-import Filter from './components/filter/Filter'
+import Card from '../components/card/Card'
+import Search from '../components/search/Search'
+import Pagination from '../components/pagination/Pagination'
+import Filter from '../components/filter/Filter'
 
-const App = () => {
+const Home = () => {
   let [fetcheddata, setFetcheddata] = useState([])
   let { info, results } = fetcheddata
   let [pageNumber, setPageNumber] = useState(1)
@@ -58,4 +53,4 @@ const App = () => {
   )
 }
 
-export default App
+export default Home

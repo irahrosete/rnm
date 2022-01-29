@@ -16,7 +16,7 @@ const Filter = ({
     setGender('')
     setSpecies('')
     setPageNumber('')
-    window.location.reload(false)
+    // window.location.reload(false)
   }
   return (
     <>
