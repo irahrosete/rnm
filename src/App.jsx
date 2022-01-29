@@ -7,6 +7,7 @@ import Home from './pages/Home'
 
 import './App.css'
 import Navbar from './components/navbar/Navbar'
+import Episodes from './pages/Episodes'
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         </div>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/episodes' element={<Episodes />} />
         </Routes>
       </Router>
     </>
