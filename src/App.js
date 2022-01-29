@@ -28,17 +28,12 @@ const App = () => {
           <div className='col-lg-8 col-12'>
             <div className='row'>
               Card component here
-              {
-                // console.log(results)
-                results.map((char) => {
-                  let { id, name } = char
-                  return (
-                    <div key={id}>
-                      <div>{name}</div>
-                    </div>
-                  )
-                })
-              }
+              {results
+                ? results.map((char) => {
+                    let { id, name } = char
+                    return <div key={id}>{name}</div>
+                  })
+                : 'No characters found'}
             </div>
           </div>
         </div>
