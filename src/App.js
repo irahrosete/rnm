@@ -14,7 +14,7 @@ const App = () => {
   let [pageNumber, setPageNumber] = useState(1)
   let [search, setSearch] = useState('')
 
-  let api = `https://rickandmortyapi.com/api/character?page=${pageNumber}=1&name=${search}`
+  let api = `https://rickandmortyapi.com/api/character?page=${pageNumber}&name=${search}`
 
   useEffect(() => {
     ;(async () => {
