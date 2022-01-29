@@ -1,4 +1,11 @@
-# Rick and Morty Who's Who
+# Rick and Morty Wiki
+
+### Features
+
+- view by character, by episode and by location
+- search
+- filter
+- pagination
 
 ### Stack
 
@@ -7,3 +14,7 @@
 ### Tools
 
 - Bootstrap
+
+### Deployment
+
+- Vercel
