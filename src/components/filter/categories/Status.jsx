@@ -25,16 +25,18 @@ const Status = ({ setPageNumber, setStatus }) => {
         data-bs-parent='#accordionExample'
       >
         <div className='accordion-body d-flex flex-wrap gap-3'>
-          {status.map((item, index) => (
-            <FilterButton
-              task={setStatus}
-              setPageNumber={setPageNumber}
-              input={item}
-              index={index}
-              key={index}
-              name='status'
-            />
-          ))}
+          {status.map((item, index) => {
+            return (
+              <FilterButton
+                task={setStatus}
+                setPageNumber={setPageNumber}
+                input={item}
+                index={index}
+                key={index}
+                name='status'
+              />
+            )
+          })}
         </div>
       </div>
     </div>

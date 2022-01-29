@@ -43,7 +43,7 @@ const Species = ({ setPageNumber, setSpecies }) => {
                 name='species'
                 index={index}
                 key={index}
-                updatePageNumber={setPageNumber}
+                setPageNumber={setPageNumber}
                 task={setSpecies}
                 input={item}
               />

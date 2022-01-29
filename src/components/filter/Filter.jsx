@@ -30,7 +30,7 @@ const Filter = ({
         </div>
         <div className='accordion' id='accordionExample'>
           <Status setPageNumber={setPageNumber} setStatus={setStatus} />
-          <Species setPageNumber={setPageNumber} setStatus={setStatus} />
+          <Species setPageNumber={setPageNumber} setSpecies={setSpecies} />
         </div>
       </div>
     </>
