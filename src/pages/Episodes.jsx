@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Card from '../components/card/Card'
+import InputGroup from '../components/filter/InputGroup'
 
 const Episodes = () => {
   let [results, setResults] = React.useState([])
@@ -38,8 +39,7 @@ const Episodes = () => {
       <div className='row'>
         <div className='col-lg-3 col-12 mb-4'>
           <h4 className='text-center mb-4'>Pick Episode</h4>
-          {/* <InputGroup name='Episode' changeID={setID} total={51} /> */}
-          input group here
+          <InputGroup name='Episode' setID={setID} total={51} />
         </div>
         <div className='col-lg-8 col-12'>
           <div className='row'>
