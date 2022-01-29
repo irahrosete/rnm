@@ -2,7 +2,7 @@ import React from 'react'
 import FilterButton from '../FilterButton'
 
 const Status = ({ setPageNumber, setStatus }) => {
-  let status = ['Alive', 'Dead', 'Unknown']
+  let status = ['Alive', 'Dead', 'unknown']
 
   return (
     <div className='accordion-item'>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const FilterButton = ({ task, setPageNumber, input, index, key, name }) => {
+const FilterButton = ({ task, setPageNumber, input, index, name }) => {
   return (
     <div>
       <style jsx>
@@ -27,7 +27,7 @@ const FilterButton = ({ task, setPageNumber, input, index, key, name }) => {
             task(input)
             setPageNumber(1)
           }}
-          for={`${name}-${index}`}
+          htmlFor={`${name}-${index}`}
         >
           {input}
         </label>
