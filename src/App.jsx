@@ -8,6 +8,7 @@ import Home from './pages/Home'
 import './App.css'
 import Navbar from './components/navbar/Navbar'
 import Episodes from './pages/Episodes'
+import Locations from './pages/Locations'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/episodes' element={<Episodes />} />
+          <Route path='/locations' element={<Locations />} />
         </Routes>
       </Router>
     </>
