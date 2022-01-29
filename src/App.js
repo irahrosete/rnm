@@ -6,10 +6,11 @@ import './App.css'
 import React, { useEffect, useState } from 'react'
 import Card from './components/card/Card'
 import Search from './components/search/Search'
+import Pagination from './components/pagination/Pagination'
 
 const App = () => {
   let [fetcheddata, setFetcheddata] = useState([])
-  let { results } = fetcheddata
+  let { info, results } = fetcheddata
   let [pageNumber, setPageNumber] = useState(1)
   let [search, setSearch] = useState('')
 
@@ -33,6 +34,11 @@ const App = () => {
           <div className='col-lg-8 col-12'>
             <div className='row'>
               <Card results={results} />
+              <Pagination
+                info={info}
+                pageNumber={pageNumber}
+                setPageNumber={setPageNumber}
+              />
             </div>
           </div>
         </div>
