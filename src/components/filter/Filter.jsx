@@ -1,4 +1,5 @@
 import React from 'react'
+import Status from './categories/Status'
 
 const Filter = ({
   pageNumber,
@@ -27,7 +28,7 @@ const Filter = ({
           Clear Filters
         </div>
         <div className='accordion' id='accordionExample'>
-          Category components here
+          <Status setPageNumber={setPageNumber} setStatus={setStatus} />
         </div>
       </div>
     </>
