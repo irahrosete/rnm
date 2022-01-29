@@ -5,12 +5,15 @@ import './App.css'
 
 import React, { useEffect, useState } from 'react'
 import Card from './components/card/Card'
+import Search from './components/search/Search'
 
 const App = () => {
   let [fetcheddata, setFetcheddata] = useState([])
   let { results } = fetcheddata
+  let [pageNumber, setPageNumber] = useState(1)
+  let [search, setSearch] = useState('')
 
-  let api = `https://rickandmortyapi.com/api/character?page=1`
+  let api = `https://rickandmortyapi.com/api/character?page=${pageNumber}=1&name=${search}`
 
   useEffect(() => {
     ;(async () => {
@@ -23,6 +26,7 @@ const App = () => {
   return (
     <div className='App'>
       <h1 className='text-center mb-3'>Characters</h1>
+      <Search setPageNumber={setPageNumber} setSearch={setSearch} />
       <div className='container'>
         <div className='row'>
           Filter component here
