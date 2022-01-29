@@ -9,10 +9,10 @@ const InputGroup = ({ name, setID, total }) => {
         id={name}
       >
         <option value='1'>Choose...</option>
-        {[...Array(total).keys()].map((episode, index) => {
+        {[...Array(total).keys()].map((x, index) => {
           return (
-            <option key={index} value={episode + 1}>
-              {name} - {episode + 1}
+            <option key={index} value={x + 1}>
+              {name} - {x + 1}
             </option>
           )
         })}

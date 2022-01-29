@@ -3,7 +3,7 @@ import Card from '../components/card/Card'
 import InputGroup from '../components/filter/InputGroup'
 
 const Episodes = () => {
-  let [results, setResults] = React.useState([])
+  let [results, setResults] = useState([])
   let [info, setInfo] = useState([])
   let { air_date, episode, name } = info
   let [id, setID] = useState(1)
@@ -29,7 +29,7 @@ const Episodes = () => {
     <div className='container'>
       <div className='row mb-3'>
         <h1 className='text-center mb-3'>
-          Episode name :{' '}
+          {episode} :{' '}
           <span className='text-primary'>{name === '' ? 'Unknown' : name}</span>
         </h1>
         <h5 className='text-center'>

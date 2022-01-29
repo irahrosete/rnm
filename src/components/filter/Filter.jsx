@@ -3,20 +3,12 @@ import Gender from './categories/Gender'
 import Species from './categories/Species'
 import Status from './categories/Status'
 
-const Filter = ({
-  pageNumber,
-  status,
-  setStatus,
-  setGender,
-  setSpecies,
-  setPageNumber,
-}) => {
+const Filter = ({ setStatus, setGender, setSpecies, setPageNumber }) => {
   let clear = () => {
     setStatus('')
     setGender('')
     setSpecies('')
     setPageNumber('')
-    // window.location.reload(false)
   }
   return (
     <>
