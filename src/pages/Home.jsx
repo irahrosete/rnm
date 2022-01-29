@@ -18,7 +18,6 @@ const Home = () => {
   useEffect(() => {
     ;(async () => {
       let data = await fetch(api).then((res) => res.json())
-      console.log(data)
       setFetcheddata(data)
     })()
   }, [api])
