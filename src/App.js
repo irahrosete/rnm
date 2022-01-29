@@ -4,6 +4,7 @@ import 'bootstrap/dist/js/bootstrap'
 import './App.css'
 
 import React, { useEffect, useState } from 'react'
+import Card from './components/Card'
 
 const App = () => {
   let [fetcheddata, setFetcheddata] = useState([])
@@ -27,13 +28,7 @@ const App = () => {
           Filter component here
           <div className='col-lg-8 col-12'>
             <div className='row'>
-              Card component here
-              {results
-                ? results.map((char) => {
-                    let { id, name } = char
-                    return <div key={id}>{name}</div>
-                  })
-                : 'No characters found'}
+              <Card results={results} />
             </div>
           </div>
         </div>
